@@ -6,6 +6,7 @@
   <title>Survey Form</title>
   <link rel="icon" href="favicon.ico" sizes="16x16" type="image/png">
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -20,65 +21,68 @@
 
         <p>How welcoming is the campus to new students?</p>
         <div class="user-box">
-          <textarea id="w3review" name="w3review" rows="4" cols="127">
+          <textarea id="w3review" name="w3review" rows="4" cols="127" required autofocus>
         </textarea>
         </div>
 
 
         <p>Overall, how do you feel about the quality of our classes?</p>
         <div class="slidecontainer">
-          <input name="quality" type="range" min="1" max="10" class="slider" id="myRange">
+          <input name="quality" type="range" min="0" max="10" name="ageInputName" id="ageInputId" id="myRange" oninput="ageOutputId.value = ageInputId.value" required="required">
+           <output name="ageOutputName" id="ageOutputId">5</output>
         </div>
 
 
         <p>Now, what about our faculty?</p>
         <div class="slidecontainer">
-          <input name="faculty" type="range" min="1" max="10" class="slider" id="myRange">
+          <input name="quality" type="range" min="0" max="10" name="ageInputName" id="ageInputId" id="myRange" oninput="ageOutputId.value = ageInputId.value" required="required">
+           <output name="ageOutputName" id="ageOutputId">5</output>
         </div>
 
 
         <p>Do you think your assignments are pertinent to your coursework and encourage you to dig deeper into your subjects?</p>
         <div class="custom-control custom-radio">
-          <input name="assignments" type="radio" name="ans" value="yes"> Yes
+          <input name="assignments" type="radio" name="ans" value="yes" required> Yes
         </div>
         <div class="custom-control custom-radio">
-          <input name="assignments" type="radio" name="ans" value="no"> No
+          <input name="assignments" type="radio" name="ans" value="no" required> No
         </div>
 
 
         <p>Does the library have sufficient resources to help you?</p>
         <div class="custom-control custom-radio">
-          <input name="resources" type="radio" name="ans" value="yes"> Yes
+          <input name="resources" type="radio" name="ans" value="yes" required> Yes
         </div>
 
 
         <div class="custom-control custom-radio">
-          <input name="resources" type="radio" name="ans" value="no"> No
+          <input name="resources" type="radio" name="ans" value="no" required> No
         </div>
         <p>How happy are you with our library resources and services?</p>
         <div class="slidecontainer">
-          <input name="Library" type="range" min="1" max="10" class="slider" id="myRange">
-        </div>
+          <input name="quality" type="range" min="0" max="10" name="ageInputName" id="ageInputId" id="myRange" oninput="ageOutputId.value = ageInputId.value" required="required">
+           <output name="ageOutputName" id="ageOutputId">5</output>
 
 
         <p>On a scale of 1 to 10, how safe do you feel on campus?</p>
         <div class="slidecontainer">
-          <input name="campus" type="range" min="1" max="10" class="slider" id="myRange">
+          <input name="quality" type="range" min="0" max="10" name="ageInputName" id="ageInputId" id="myRange" oninput="ageOutputId.value = ageInputId.value" required="required">
+           <output name="ageOutputName" id="ageOutputId">5</output>
         </div>
 
 
         <p>Are you satisfied with our athletic development programs and other extracurricular clubs?</p>
         <div class="custom-control custom-radio">
-          <input name="sports" type="radio" id="sports" value="yes"> Yes
+          <input name="sports" type="radio" id="sports" value="yes" required> Yes
         </div>
         <div class="custom-control custom-radio">
-          <input name="sports" type="radio" id="sports" value="no"> No
+          <input name="sports" type="radio" id="sports" value="no" required> No
         </div>
 
 
         <p>How are we doing on cleanliness and facilities maintenance?</p>
         <div class="user-box">
-          <textarea id="w3review" name="clean" rows="4" cols="127"></textarea>
+          <textarea id="w3review" name="clean" rows="4" cols="127" required></textarea>
         </div>
 
 
