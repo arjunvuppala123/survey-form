@@ -65,7 +65,7 @@ app.post("/", function(req, res) {
     }
     else
     {
-      console.log("fuck you");
+      console.log("error!");
     }
   });
 });
